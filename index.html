@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding-top: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+        }
+        button {
+            border-radius: 10px;
+            height: 60px;
+            width: 200px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    
+    <button onclick="add()" style="background-color: red;">Perform Addition</button>
+    <button onclick="sub()" style="background-color: yellow;">Perform Subtraction</button>
+    <button onclick="multi()" style="background-color: blue;">Perform Multiplication</button>
+    <button onclick="div()" style="background-color: green;">Perform Division</button>
+
+    
+    <script>
+        
+        function add(){
+            let a=parseInt(prompt('Enter first number:- '));
+            let b=parseInt(prompt('Enter second number:- '));
+            alert('Addition result:-  '+(a+b));
+        }
+
+        function sub(){
+            let a=parseInt(prompt('Enter first number:- '));
+            let b=parseInt(prompt('Enter second number:- '));
+            alert('subtraction result:-  '+(a-b));
+        }
+        function multi(){
+            let a=parseInt(prompt('Enter first number:- '));
+            let b=parseInt(prompt('Enter second number:- '));
+            alert('multiplication result:-  '+(a*b));
+        }
+        function div(){
+            let a=parseInt(prompt('Enter first number:- '));
+            let b=parseInt(prompt('Enter second number:- '));
+            alert('division result:-  '+(a/b));
+        }
+        
+    </script>
+</body>
+</html>
